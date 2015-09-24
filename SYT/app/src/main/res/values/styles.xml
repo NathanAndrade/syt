@@ -5,4 +5,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="PrimaryButton" parent="AppTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#FF8000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

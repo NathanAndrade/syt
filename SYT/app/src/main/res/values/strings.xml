@@ -1,14 +1,20 @@
 <resources>
     <string name="app_name">SYT</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">My Shares</string>
+    <string name="title_section2">Shared with Me</string>
+    <string name="title_section3">Favorites</string>
+    <string name="title_section4">My Friends</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_example">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
 
-    <string name="action_settings">Configurações</string>
+    <string name="error_invalid_email">Email inválido</string>
+    <string name="error_invalid_password">Senha muito curta</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_field_required">Este campo é obrigatório</string>
+    <string name="error_diferent_password">As senhas devem ser iguais</string>
 </resources>
