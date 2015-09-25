@@ -3,6 +3,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FF8000</item>
+        <item name="colorPrimaryDark">#FF7000</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
     </style>
 
     <style name="PrimaryButton" parent="AppTheme">
