@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="android:Theme.Material.Light">
+    <style name="AppTheme" parent="android:ThemeOverlay.Material.Light">
 
         <item name="android:colorPrimary">#FF8000</item>
         <item name="android:colorPrimaryDark">#FF7000</item>
         <item name="android:textColorPrimary">#FFFFFF</item>
-
     </style>
 </resources>
