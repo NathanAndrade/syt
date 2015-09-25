@@ -21,14 +21,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="5dp"
-                android:text="My friends"
+                android:text="Shared with Me"
                 android:gravity="center"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@android:color/secondary_text_light"
                 android:textStyle="bold" />
 
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view3"
+                android:id="@+id/card_view1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -38,7 +38,7 @@
                 <View
                     android:layout_width="7dp"
                     android:layout_height="fill_parent"
-                    />
+                    android:background="#79A9F2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -46,94 +46,25 @@
                     android:orientation="horizontal"
                     android:padding="5dip">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image3"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:src="@drawable/lara_croft"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/friend3"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="Lara Croft"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:textColor="@android:color/secondary_text_light"
-                            android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="fill_parent"
-                            android:layout_height="1dp"
-                            android:background="@android:color/darker_gray" />
-
-                        <TextView
-                            android:id="@+id/travels3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:text="Travels: 10"
-                            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                        <TextView
-                            android:id="@+id/shared3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:text="Shared with me: 4"
-                            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                card_view:cardCornerRadius="4dp">
-
-                <View
-                    android:layout_width="7dp"
-                    android:layout_height="fill_parent"
-                    />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="5dip">
-
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <ImageView
                         android:id="@+id/image2"
+                        android:padding="5dp"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/luigi"/>
 
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-
-
                         <TextView
-                            android:id="@+id/friend1"
+                            android:id="@+id/place2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:padding="5dp"
-                            android:text="Luigi"
+                            android:text="Londres"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textColor="@android:color/secondary_text_light"
                             android:textStyle="bold" />
@@ -144,20 +75,36 @@
                             android:background="@android:color/darker_gray" />
 
                         <TextView
-                            android:id="@+id/travels2"
+                            android:id="@+id/country2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Travels: 3"
+                            android:text="Inglaterra"
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <TextView
-                            android:id="@+id/shared2"
+                            android:id="@+id/cost2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Shared with me: 1"
+                            android:text="$ 10 Mil"
                             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/date2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="09/08/2009 - 10/28/2009"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <TextView
+                            android:id="@+id/shared_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Shared by Luigi in: 21/09/2015"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
 
                     </LinearLayout>
 
@@ -176,7 +123,7 @@
                 <View
                     android:layout_width="7dp"
                     android:layout_height="fill_parent"
-                     />
+                    android:background="#79A9F2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -184,12 +131,12 @@
                     android:orientation="horizontal"
                     android:padding="5dip">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image1"
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:padding="5dp"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/mario_bros"/>
-
+                        android:src="@drawable/luigi"/>
 
 
                     <LinearLayout
@@ -197,14 +144,97 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-
-
                         <TextView
-                            android:id="@+id/place2"
+                            android:id="@+id/place3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:padding="5dp"
-                            android:text="Mario Bros"
+                            android:text="Machu Picchu"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@android:color/secondary_text_light"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <TextView
+                            android:id="@+id/country3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Peru"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/cost3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="$ 5 Mil"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/date3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="09/03/2014 - 22/03/2014"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <TextView
+                            android:id="@+id/shared_date2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Shared by Luigi in: 25/09/2015"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="4dp">
+
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="fill_parent"
+                    android:background="#79A9F2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dip">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:padding="5dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/mario_bros"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/place3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="Disney (Orlando)"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textColor="@android:color/secondary_text_light"
                             android:textStyle="bold" />
@@ -219,7 +249,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Travels: 7"
+                            android:text="USA"
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <TextView
@@ -227,19 +257,30 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Shared with me: 3"
+                            android:text="$ 10 Mil"
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
+                        <TextView
+                            android:id="@+id/date2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="10/12/2008 - 04/01/2009"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-
+                        <TextView
+                            android:id="@+id/shared_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Shared by Mario Bros in: 25/09/2015"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
 
                     </LinearLayout>
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-
-
 
         </LinearLayout>
     </com.melnykov.fab.ObservableScrollView>

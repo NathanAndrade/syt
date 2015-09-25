@@ -54,8 +54,14 @@ public class MainActivity extends Activity
                         .commit();
                 break;
             case 1:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, new SharedFragment())
+                        .commit();
                 break;
             case 2:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, new FavoritesFragment())
+                        .commit();
                 break;
             case 3:
                 fragmentManager.beginTransaction()
