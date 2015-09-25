@@ -58,6 +58,9 @@ public class MainActivity extends Activity
             case 2:
                 break;
             case 3:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, new MyFriendsFragment())
+                        .commit();
                 break;
         }
     }
