@@ -28,7 +28,7 @@
                 android:textStyle="bold" />
 
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view2"
+                android:id="@+id/card_view_london"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -47,7 +47,7 @@
                     android:padding="5dp">
 
                     <ToggleButton
-                        android:id="@+id/favorite2"
+                        android:id="@+id/favorite_london"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginBottom="40dp"
@@ -67,15 +67,28 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/place2"
+                        <RelativeLayout
+
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="Londres"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:textColor="@android:color/secondary_text_light"
-                            android:textStyle="bold" />
+                            android:layout_height="wrap_content"
+                            android:id="@+id/relative_london">
+                            <TextView
+                                android:id="@+id/place_london"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="London"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/secondary_text_light"
+                                android:textStyle="bold"/>
+
+                            <ImageView
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_action_share"
+                                android:onClick="actionShare"/>
+                        </RelativeLayout>
 
                         <View
                             android:layout_width="fill_parent"
@@ -83,15 +96,15 @@
                             android:background="@android:color/darker_gray" />
 
                         <TextView
-                            android:id="@+id/country2"
+                            android:id="@+id/country_london"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Inglaterra"
+                            android:text="England"
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <TextView
-                            android:id="@+id/cost2"
+                            android:id="@+id/cost_london"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
@@ -99,7 +112,7 @@
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <TextView
-                            android:id="@+id/date2"
+                            android:id="@+id/date_london"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
@@ -113,7 +126,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view1"
+                android:id="@+id/card_view_disney"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -131,14 +144,10 @@
                     android:orientation="horizontal"
                     android:padding="5dip">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_action_share"
-                        android:onClick="actionShare"/>
+
 
                     <ToggleButton
-                        android:id="@+id/favorite1"
+                        android:id="@+id/favorite_disney"
                         android:layout_marginBottom="40dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
@@ -157,24 +166,35 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+                        <RelativeLayout
 
-                        <TextView
-                            android:id="@+id/place1"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="Disney (Orlando)"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:textColor="@android:color/secondary_text_light"
-                            android:textStyle="bold" />
+                            android:layout_height="wrap_content"
+                            android:id="@+id/relative_disney">
+                            <TextView
+                                android:id="@+id/place1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="Disney (Orlando)"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/secondary_text_light"
+                                android:textStyle="bold"/>
 
+                            <ImageView
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_action_share"
+                                android:onClick="actionShare"/>
+                        </RelativeLayout>
                         <View
                             android:layout_width="fill_parent"
                             android:layout_height="1dp"
                             android:background="@android:color/darker_gray" />
 
                         <TextView
-                            android:id="@+id/country1"
+                            android:id="@+id/country_disney"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
@@ -182,7 +202,7 @@
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <TextView
-                            android:id="@+id/cost1"
+                            android:id="@+id/cost_disney"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
@@ -190,7 +210,7 @@
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <TextView
-                            android:id="@+id/date1"
+                            android:id="@+id/date_disney"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
@@ -203,9 +223,8 @@
 
             </android.support.v7.widget.CardView>
 
-
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view5"
+                android:id="@+id/card_view_salvador"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -224,7 +243,7 @@
                     android:padding="5dip">
 
                     <ToggleButton
-                        android:id="@+id/favorite1"
+                        android:id="@+id/favorite_salvador"
                         android:layout_marginBottom="40dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
@@ -243,15 +262,28 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/place1"
+                        <RelativeLayout
+
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="Salvador"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:textColor="@android:color/secondary_text_light"
-                            android:textStyle="bold" />
+                            android:layout_height="wrap_content"
+                            android:id="@+id/relative_salvador">
+                            <TextView
+                                android:id="@+id/place_salvador"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="Salvador"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/secondary_text_light"
+                                android:textStyle="bold"/>
+
+                            <ImageView
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_action_share"
+                                android:onClick="actionShare"/>
+                        </RelativeLayout>
 
                         <View
                             android:layout_width="fill_parent"
@@ -259,15 +291,15 @@
                             android:background="@android:color/darker_gray" />
 
                         <TextView
-                            android:id="@+id/country1"
+                            android:id="@+id/country_salvador"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Brasil"
+                            android:text="Brazil"
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <TextView
-                            android:id="@+id/cost1"
+                            android:id="@+id/cost_salvador"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
@@ -275,7 +307,7 @@
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <TextView
-                            android:id="@+id/date1"
+                            android:id="@+id/date_salvador"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
@@ -289,7 +321,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view5"
+                android:id="@+id/card_view_zurich"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -308,7 +340,7 @@
                     android:padding="5dip">
 
                     <ToggleButton
-                        android:id="@+id/favorite1"
+                        android:id="@+id/favorite_zurich"
                         android:layout_marginBottom="40dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
@@ -328,15 +360,28 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/place1"
+                        <RelativeLayout
+
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="Zurich"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:textColor="@android:color/secondary_text_light"
-                            android:textStyle="bold" />
+                            android:layout_height="wrap_content"
+                            android:id="@+id/relative_zurich">
+                            <TextView
+                                android:id="@+id/place_zurich"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="Zurich"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/secondary_text_light"
+                                android:textStyle="bold"/>
+
+                            <ImageView
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_action_share"
+                                android:onClick="actionShare"/>
+                        </RelativeLayout>
 
                         <View
                             android:layout_width="fill_parent"
@@ -344,15 +389,15 @@
                             android:background="@android:color/darker_gray" />
 
                         <TextView
-                            android:id="@+id/country1"
+                            android:id="@+id/country_zurich"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Suiça"
+                            android:text="Switzerland"
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <TextView
-                            android:id="@+id/cost1"
+                            android:id="@+id/cost_zurich"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
@@ -360,7 +405,7 @@
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <TextView
-                            android:id="@+id/date1"
+                            android:id="@+id/date_zurich"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
